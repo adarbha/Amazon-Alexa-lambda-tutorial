@@ -1,13 +1,10 @@
-# Source code for responses - Teach Telugu App
 import random
 def lambda_handler(event, context):
-    
-    # Event in args is basically the request json object from request generated
     
     abuseIntent = 'AbuseIntent'
     introIntent = 'introduceInTelugu'
 
-    boothulu = ["Bahen-khe lowdey", "Bhaadakow","Erri pooka","Lunjhaa kodaka", "Muunda kodaka","Maa-khe lowdey"]
+    boothulu = ["Bahen-khe lowdey", "Bhaadakow","Erri pooka","Dho-nga Lunjhaa kodaka", "Thi,kka Moonda kodaka","Maa-khe lowdey"]
 
             
     def getAbuseIntent(boothulu):
@@ -17,7 +14,7 @@ def lambda_handler(event, context):
         
     
     def getIntroIntent():
-        things_to_say = '''Naa peru Alexa, Maa mummy peru Sándhyaa Raani. Maa mummy ki iddharu daddys, So I don't know who my daddy is'''
+        things_to_say = '''Naa peyru, Alexa, Maa mummy peyru, Sunnjhaa Raani. Maa mummy ki e-ddharu daddys, So I don't know who my daddy is'''
         return buildresponse(things_to_say)
     
         
