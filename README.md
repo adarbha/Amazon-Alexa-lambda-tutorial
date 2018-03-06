@@ -1,2 +1,2 @@
 # Amazon-Alexa-lambda-tutorial
-Lambda for generating response to an Alexa skill
+Lambda for generating a response to an Alexa skill
